@@ -1,7 +1,9 @@
+
 package GoToGym;
+//WeightedExercise 임..
 
 public class workoutStart extends Exercise{
-    private double weight;
+    private double weight =0;
     public workoutStart(String userName, String name, String explanation, int sets, int reps, double weight){
         super(userName, name, explanation, sets, reps);
         this.weight = weight;
