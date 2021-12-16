@@ -2,16 +2,16 @@
 package GoToGym;
 //WeightedExercise 임..
 
-public class workoutStart extends Exercise{
+public class WeightExercise extends Exercise{
     private double weight =0;
-    public workoutStart(String userName, String name, String explanation, int sets, int reps, double weight){
-        super(userName, name, explanation, sets, reps);
-        this.weight = weight;
+    public WeightExercise(String name, String explanation, int sets, int reps, double weight){
+        super(name, explanation, sets, reps);
+        this.weight = weight; //exercise에 weight가 없음...
     }
 
     @Override
     public String toString(){
-        return "name" + this.getUserName() +this.getName() + "sets; " + this.getSets() + "reps: "+ this.getSets() + "weight" + this.weight +"kg" + this.getExplanation();
+        return this.getName() + "  sets:  " + this.getSets() + "   reps: "+ this.getSets() + "   weight: " + this.weight +"kg  " + this.getExplanation();
 
     }
 

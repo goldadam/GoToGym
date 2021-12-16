@@ -1,6 +1,8 @@
 package GoToGym;
 
-public class DbAccess implements DbInterface{
+import GoToGym.aboutDB.DbInterface;
+
+public class DbAccess implements DbInterface {
     private static final int NAME_INDEX = 0;
     private final int EXPLANATION_INDEX = 1;
     @Override

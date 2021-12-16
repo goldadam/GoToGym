@@ -4,6 +4,7 @@ import lombok.*;
 import java.util.*;
 
 @Getter
+@ToString
 public class Workout {
     private String name;
     private String gender;
@@ -13,6 +14,12 @@ public class Workout {
     public Workout(String name, String gender){
         this.name = name;
         this.gender = gender;
+    }
+    public int getExerciseLength(){
+        return exercises.length;
+    }
+    public Exercise[] getExercise(){
+        return exercises;
     }
 
 
