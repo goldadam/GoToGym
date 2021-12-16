@@ -39,14 +39,18 @@ public class Workout {
                 io.output("=========================================");
                 io.output("\n");
                 io.output(exercises[i]+" -> 가 원래 있던 운동이라서 "+exercise+"로 대체됩니다");
+                io.output("=========================================");
                 exercises[i] = exercise;
                 return;
             }
         }
         this.exercises[this.index] = exercise;
-        this.index +=1;
+        this.index +=1; //exercise[] 배열에서 index를 이용해 count해주는 역할.
 
     }
+    /*
+    운동삭제 메서드, 삭제할 번호에 들어가 있는 것을 삭제하고 index 넘버를 감소시킴
+     */
     public void exerciseRemove(int removeNum){
         if(removeNum >= 0 && this.index > removeNum){
             for(int i = 0; i < index; i++){

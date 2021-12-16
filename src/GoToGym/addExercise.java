@@ -43,7 +43,7 @@ public class addExercise {
     private static int addSetNumbers(int min, int max){
         int setCount = 0;
         do{
-            io.output("하고자 하고 싶은 세트수를 입력하세요 " + min + "~" + max + ":");
+            io.output("하고자 하고 싶은 세트수를 입력하세요 " + min + " ~ " + max + " : ");
             setCount = io.inputInt();
         }while(setCount < min || setCount > max);
         return setCount;
@@ -52,7 +52,7 @@ public class addExercise {
     private static int addRepsNumber(int min, int max){
         int repCount = 0;
         do{
-            io.output("하고자 하고싶은 반복수를 입력하세요 " + min + "~" + max + ":");
+            io.output("하고자 하고싶은 반복수를 입력하세요 " + min + " ~ " + max + " : ");
             repCount = io.inputInt();
         }while(repCount < min || repCount > max);
         return repCount;
@@ -61,7 +61,7 @@ public class addExercise {
     private static double addWeightNum(double min, double max){
         double weightCount = 0;
         do{
-            io.output("하고자 하고 싶은 무게를 입력하세요" + min + "~" + max + ":");
+            io.output("하고자 하고 싶은 무게를 입력하세요" + min + " ~ " + max + " : ");
             weightCount = io.inputDouble();
         }while(weightCount < min || weightCount > max);
         return weightCount;

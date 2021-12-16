@@ -10,8 +10,11 @@ public class recommendBack {
     public static void backExercise(){
         int selectBack = 0;
         io.output("등오마카세를 선택하셨습니다.");
+        io.output("=========================================");
         io.output("30분(1), 1시간(2), 1시간반(3) 코스중 골라주세요.");
+        io.output("=========================================");
         io.output("운동시간은 준비운동을 제외한 시간입니다.");
+        io.output("=========================================");
         selectBack = sc.nextInt();
         switch(selectBack){
             case 1:

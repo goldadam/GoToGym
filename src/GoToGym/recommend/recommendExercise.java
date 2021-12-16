@@ -13,6 +13,7 @@ public class recommendExercise {
     public static void recommendExercises(){
         int select = 0;
         io.output("초심자를 위한 운동추천입니다.");
+
         io.output("하고싶은 운동을 골라주세요");
         io.output("======================================");
         io.output("<가슴> : (1) , <등> : (2) , <하체> : (3), <종료> : (4)");

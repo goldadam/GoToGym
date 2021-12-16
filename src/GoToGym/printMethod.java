@@ -17,7 +17,7 @@ public class printMethod {
     }
     static void printExercise(Workout workout){
         io.output("===============");
-        io.output("Workout name: " + workout.getName());
+        io.output( workout.getName() + "님의 운동정보 열람");
         for(int i = 0; i < workout.getIndex(); i++){
             io.output("<"+ (i+INDEXNUM_DISPLAY) + ">" + workout.getExercise()[i].toString() );
         }
