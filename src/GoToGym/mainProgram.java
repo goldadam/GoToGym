@@ -25,29 +25,39 @@ public class mainProgram {
         io.output("==================================================================");
         String Name;
         String gender;
-        try {
+
             while (true) {
+
                 while (true) {
-                    int CHECKING_ADMIN = 0;
-                    String tmp = "";
-                    CHECKING_ADMIN = sc.nextInt();
-                    tmp = sc.nextLine();
-                    if (CHECKING_ADMIN == PASSWORD_ADMIN) {
-                        io.output("관리자 계정에 로그인되었습니다.");
-                        break;
-                    } else {
-                        io.output("계정 비밀번호가 잘못 입력되었습니다.");
-                        io.output("비밀번호를 다시 입력해주세요.");
-                        io.output("==================================================================");
+                    try {
+                        int CHECKING_ADMIN = 0;
+                        String tmp = "";
+                        CHECKING_ADMIN = sc.nextInt();
+                        tmp = sc.nextLine();
+                        if (CHECKING_ADMIN == PASSWORD_ADMIN) {
+                            io.output("관리자 계정에 로그인되었습니다.");
+                            break;
+                        } else {
+                            io.output("계정 비밀번호가 잘못 입력되었습니다.");
+                            io.output("비밀번호를 다시 입력해주세요.");
+                            io.output("==================================================================");
+
+                        }
+                    }catch(InputMismatchException e){
+//                        e.printStackTrace();
+                        io.output("input 정보가 맞지 않습니다.");
                         continue;
+                    }catch(NullPointerException e){
+                        e.printStackTrace();
+                        io.output("널값입니다");
+                    }catch(Exception e){
+                        e.printStackTrace();
+                        io.output("에기치 못한 오류입니다 확인 해야됩니다~");
                     }
                 }
                 break;
             }
-        }catch(InputMismatchException e){
-            io.output("input 정보가 맞지 않습니다.");
 
-        }
 
         io.output("현재 날짜는 " + date + " 입니다. ");
         io.output("즐거운 운동 되세요!");
