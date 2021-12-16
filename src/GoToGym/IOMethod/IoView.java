@@ -6,6 +6,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 //input 할 값들이 너무 많아서 인터페이스 하나로 만들어서 값 부여하기
+//인터페이스에서 설정해 놓은 함수들을 좀더 구체적으로 사용가능하게 만들어놓음.
     public class IoView implements IoInterface {
         private final int DEFAULT_INT = 0;
         private final double DEFAULT_DOUBLE = 0;

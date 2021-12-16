@@ -1,6 +1,8 @@
 
 package GoToGym;
-//WeightedExercise 임..
+/*
+Exercise를 상속받아 마찬가지로 sets, reps등을 설정하고 실행가능하게 만듦.
+ */
 
 public class WeightExercise extends Exercise{
     private double weight =0;

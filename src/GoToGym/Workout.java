@@ -3,7 +3,7 @@ import GoToGym.IOMethod.IoView;
 import lombok.*;
 
 import java.util.*;
-
+//Getter와 ToString()을 오버로딩 해서 사용함.
 @Getter
 @ToString
 public class Workout {
@@ -17,17 +17,22 @@ public class Workout {
         this.name = name;
         this.gender = gender;
     }
+    /*
+    Exercise Length를 구하기 위해 사용, 기본적으로 설정한 Exercise 배열을 길이 30으로
+    만들었는데, 나머지 값들이 null로 초기화되었기 때문에 filter 를 사용해 null 을없애고 count를
+    리턴해주게 만듦.
+     */
     public int getExerciseLength(){
         return (int) Arrays.stream(exercises).filter(p -> p!=null).count();
-//        return exercises.length;
-
     }
     public Exercise[] getExercise(){
         return exercises;
     }
 
-
-
+    /*
+    운동추가하는 메서드, Exercise에서 중복된다는 운동이 있다고 할 시
+    원래있던 운동이 삭제되고 새로운 운동으로 대체됨
+     */
     public void addExercises(Exercise exercise){
         for(int i =0; i<this.index; i++){
             if(exercises[i].equals(exercise)){

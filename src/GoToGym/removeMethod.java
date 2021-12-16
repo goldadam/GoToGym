@@ -2,7 +2,6 @@ package GoToGym;
 
 import GoToGym.IOMethod.IoInterface;
 import GoToGym.IOMethod.IoView;
-
 import java.util.Scanner;
 
 public class removeMethod {
@@ -22,6 +21,7 @@ public class removeMethod {
             io.output("삭제할 번호를 입력해주세요. 종료하려면 99를 입력해주세요.");
             printMethod.printExerciseName(workout);
             selectNum = sc1.nextInt();
+
             if(selectNum == 99  ){
                 System.exit(0); //무조건 종료 실시.
             }

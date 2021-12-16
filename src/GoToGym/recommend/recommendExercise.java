@@ -4,7 +4,9 @@ package GoToGym.recommend;
 import GoToGym.IOMethod.IoView;
 
 import java.util.Scanner;
-
+/*
+Exercise중 하고싶은 운동을 골라줌
+ */
 public class recommendExercise {
     private static IoView io = new IoView();
     private static Scanner sc = new Scanner(System.in);

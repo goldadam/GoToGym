@@ -5,7 +5,9 @@ import GoToGym.IOMethod.IoView;
 import static GoToGym.mainProgram.dbAccess;
 import static GoToGym.printMethod.printNames;
 
-
+/*
+dbAccess을 이용해 운동을 선택할 수 있는 메서드를 만듦.
+ */
 public class selectMethod {
     private static final int INDEXNUM_DISPLAY = 1;
     private static final int LENGTH_OF_EXERCISE = 9; //맨몸이나 weight나 둘다 운동종류 9개.
